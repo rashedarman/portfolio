@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.text-green {
+  color: #36b37f;
+}
+
+#toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.logo-primary {
+  color: #28352f;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0;
+}
+
+#headline {
+  background-image: url("./assets/header-illsutration-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading-primary {
+  margin: 0;
+  color: #172b4d;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 52px;
+}
+
+.support-text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #172b4d;
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+}
+
+.social-links li {
+  padding: 0 8px;
+}
+
+.social-links a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #505f79;
+}
