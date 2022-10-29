@@ -83,6 +83,7 @@ body {
   width: 48px;
   border-top: 4px solid var(--color-secondary);
   border-radius: 24px;
+  margin-bottom: 60px;
 }
 
 .icon-btn {
@@ -91,7 +92,6 @@ body {
 }
 
 .card-container {
-  margin: 60px 0;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16px;
@@ -129,7 +129,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .tag {
@@ -138,6 +140,7 @@ body {
   font-weight: 600;
   color: #3a4a42;
   background-color: #ebf0ee;
+  border-radius: 4px;
 }
 
 .btn-primary {
@@ -149,4 +152,57 @@ body {
   border: none;
   border-radius: 4px;
   align-self: center;
+}
+
+.about-me-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 24px;
+  padding: 24px;
+}
+
+.bio {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./assets/aboutme-illustration-1.png"), url("./assets/aboutme-illustration-2.png");
+  background-position: right top, left bottom;
+  background-repeat: no-repeat;
+}
+
+.bio > .supporting-text {
+  color: #42526e;
+  line-height: 32px;
+  margin: 0 0 20px;
+}
+
+.card-secondary {
+  height: 350px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #c1c7d0;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.card-secondary .card-title {
+  color: #344563;
+  margin-bottom: 20px;
+}
+
+.card-secondary img {
+  margin: 20px 0;
+}
+
+.tag-secondary {
+  color: var(--color-secondary);
+  padding: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 8px;
 }
