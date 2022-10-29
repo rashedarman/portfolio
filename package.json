@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rashedarman/portfolio.git",
+  "author": "Rashed Arman <rashedaraman21@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint \"**/*.{css,scss}\""
+  },
+  "devDependencies": {
+    "stylelint": "13.x",
+    "stylelint-config-standard": "21.x",
+    "stylelint-csstree-validator": "1.x",
+    "stylelint-scss": "3.x"
+  }
+}
