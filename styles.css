@@ -166,8 +166,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("./assets/aboutme-illustration-1.png"),
-    url("./assets/aboutme-illustration-2.png");
+  background-image: url("./assets/aboutme-illustration-1.png"), url("./assets/aboutme-illustration-2.png");
   background-position: right top, left bottom;
   background-repeat: no-repeat;
 }
@@ -210,6 +209,7 @@ body {
 
 #contact-form {
   padding: 0 24px;
+  background: url("./assets/illustration-contact-form.png") no-repeat 100% 75%;
 }
 
 #contact-form > form {
@@ -248,13 +248,24 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin: 46px 0;
+  height: 189px;
+}
+
+.contact-form__social_link .social-links {
+  margin: 0 0 0 19px;
 }
 
 .contact-form__email {
+  margin: 0;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
-  height: 189px;
+  color: #42526e;
+}
+
+.footer-indicator {
+  width: 50%;
+  border-top: 4px solid #111;
+  border-radius: 24px;
 }
