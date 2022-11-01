@@ -217,18 +217,28 @@
           to chat please get in touch.
         </h3>
 
-        <form action="#">
-          <input type="text" name="name" id="name" placeholder="Full name" />
+        <form action="https://formspree.io/f/xpznodbr" method="post">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Full name"
+            required
+            maxlength="30"
+          />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email address"
+            required
           />
           <textarea
             name="message"
             id="message"
             placeholder="Enter text here"
+            maxlength="500"
+            required
           ></textarea>
           <input class="btn-primary" type="submit" value="Get in touch" />
         </form>
