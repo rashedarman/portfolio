@@ -64,16 +64,6 @@ body {
   line-height: 28px;
   text-align: center;
   position: relative;
-  animation: top-bottom 1s ease-in;
-}
-
-@keyframes top-bottom {
-  0% {
-    left: -1000px;
-  }
-  100% {
-    left: 0;
-  }
 }
 
 .social-links {
@@ -111,7 +101,7 @@ body {
 }
 
 .icon-btn:hover {
-  border:1px solid var(--color-secondary);
+  border: 1px solid var(--color-secondary);
   border-radius: 50%;
   transform: scale(1.3);
   color: var(--color-secondary);
@@ -179,6 +169,7 @@ body {
   border-radius: 4px;
   align-self: center;
   transition: all 300ms ease-in;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
