@@ -10,9 +10,9 @@
 - CSS
 - Figma
 
-## Live Demo (if available)
+## Live Demo
 
-N/A
+- [Portfolio](https://rashedarman.github.io/portfolio)
 
 ## Getting Started
 
