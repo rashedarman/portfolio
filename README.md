@@ -12,9 +12,11 @@
 
 ## Live Demo (if available)
 
-N/A
+- [Portfolio](https://rashedarman.github.io/portfolio)
 
 ## Getting Started
+
+- [Loom walkthrough](https://www.loom.com/share/533b495e95a34558a42e6f1d01119270)
 
 ### Prerequisites
 
@@ -22,9 +24,9 @@ N/A
 
 ## Author
 
+- LinkedIn: [@rashedarman](https://www.linkedin.com/in/rashedarman/)
 - GitHub: [@rashedarman](https://github.com/rashedarman)
 - Twitter: [@rashedarman21](https://twitter.com/rashedarman21)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/rashedarman/)
 
 ## Show your support
 
