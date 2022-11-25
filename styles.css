@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --color-primary: #172b4d;
@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 #headline {
-  background-image: url("./assets/header-illsutration-mobile.png");
+  background-image: url('./assets/header-illsutration-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -109,7 +109,7 @@ body {
   padding: 0 24px;
 }
 
-#recent-works {
+#portfolio {
   padding: 24px;
   max-width: 1155px;
   margin: auto;
@@ -128,7 +128,7 @@ body {
   cursor: pointer;
 }
 
-#recent-works .container-lg {
+#portfolio .container-lg {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16px;
@@ -192,7 +192,7 @@ body {
   cursor: pointer;
 }
 
-.about-me-cards {
+.about-cards {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 24px;
@@ -206,8 +206,8 @@ body {
   align-items: center;
 
   /* stylelint-disable  declaration-colon-newline-after */
-  background-image: url("./assets/aboutme-illustration-1.png"),
-    url("./assets/aboutme-illustration-2.png");
+  background-image: url('./assets/aboutme-illustration-1.png'),
+    url('./assets/aboutme-illustration-2.png');
   background-position: right top, left bottom;
   background-repeat: no-repeat;
 }
@@ -248,39 +248,39 @@ body {
   border-radius: 8px;
 }
 
-#contact-form {
+#contact {
   padding: 60px;
-  background: url("./assets/illustration-contact-form.png") no-repeat 100% 75%;
+  background: url('./assets/illustration-contact-form.png') no-repeat 100% 75%;
 }
 
-#contact-form > form {
+.contact-form {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-#contact-form h3 {
+#contact h3 {
   margin-bottom: 58px;
 }
 
-#contact-form input {
+.contact-form input {
   padding: 15px;
 }
 
-#contact-form input::placeholder {
+.contact-form input::placeholder {
   color: #6b778c;
   font-weight: 400;
   font-size: 15px;
 }
 
-#contact-form textarea {
+.contact-form textarea {
   height: 114px;
   padding: 12px;
   border: 1px solid #60c095;
   border-radius: 4px;
 }
 
-#contact-form textarea::placeholder {
+.contact-form textarea::placeholder {
   color: #091e42;
   font-size: 15px;
 }
@@ -326,7 +326,7 @@ footer .social-links {
   }
 
   #headline {
-    background-image: url("./assets/header-illustration-desktop.png");
+    background-image: url('./assets/header-illustration-desktop.png');
     height: 900px;
     background-size: cover;
   }
@@ -339,19 +339,19 @@ footer .social-links {
     padding: 0 75px;
   }
 
-  #recent-works .container-lg {
+  #portfolio .container-lg {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
 
-  .about-me-cards {
+  .about-cards {
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     max-width: 1171px;
     margin: auto;
   }
 
-  #contact-form {
+  #contact {
     padding: 150px;
     display: flex;
     flex-direction: row;
@@ -359,13 +359,13 @@ footer .social-links {
     column-gap: 24px;
   }
 
-  #contact-form > form {
+  #contact > form {
     display: flex;
     flex-direction: column;
     width: 50%;
   }
 
-  #contact-form h3 {
+  #contact h3 {
     margin: 0;
     width: 50%;
   }
