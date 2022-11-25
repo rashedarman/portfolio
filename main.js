@@ -40,7 +40,7 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
-contactForm.addEventListener('keyup', (e) => {
+contactForm.addEventListener('keyup', () => {
   const nameInput = contactForm.elements.name;
   const emailInput = contactForm.elements.email;
   const messageInput = contactForm.elements.message;
@@ -55,7 +55,10 @@ contactForm.addEventListener('keyup', (e) => {
 });
 
 // retrieve saved (if any) form data and pre-fill the inputs
-const formData = JSON.parse(localStorage.getItem('formData'));
-for (const key in formData) {
-  contactForm.elements[key].value = formData[key];
+if (localStorage.getItem('formData')) {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  Object.keys(formData).forEach((key) => {
+    contactForm.elements[key].value = formData[key];
+  });
 }
