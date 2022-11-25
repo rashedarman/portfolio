@@ -39,3 +39,23 @@ contactForm.addEventListener('submit', (e) => {
     msgField.textContent = 'Email must be all lowercase characters';
   }
 });
+
+contactForm.addEventListener('keyup', (e) => {
+  const nameInput = contactForm.elements.name;
+  const emailInput = contactForm.elements.email;
+  const messageInput = contactForm.elements.message;
+
+  const data = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(data));
+});
+
+// retrieve saved (if any) form data and pre-fill the inputs
+const formData = JSON.parse(localStorage.getItem('formData'));
+for (const key in formData) {
+  contactForm.elements[key].value = formData[key];
+}
