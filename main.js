@@ -39,3 +39,26 @@ contactForm.addEventListener('submit', (e) => {
     msgField.textContent = 'Email must be all lowercase characters';
   }
 });
+
+contactForm.addEventListener('keyup', () => {
+  const nameInput = contactForm.elements.name;
+  const emailInput = contactForm.elements.email;
+  const messageInput = contactForm.elements.message;
+
+  const data = {
+    name: nameInput.value,
+    email: emailInput.value,
+    message: messageInput.value,
+  };
+
+  localStorage.setItem('formData', JSON.stringify(data));
+});
+
+// retrieve saved (if any) form data and pre-fill the inputs
+if (localStorage.getItem('formData')) {
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  Object.keys(formData).forEach((key) => {
+    contactForm.elements[key].value = formData[key];
+  });
+}
