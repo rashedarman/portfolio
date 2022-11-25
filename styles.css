@@ -290,6 +290,10 @@ body {
   border-radius: 8px;
 }
 
+.field small {
+  color: #fb4934;
+}
+
 #contact {
   padding: 60px;
   background: url('./assets/illustration-contact-form.png') no-repeat 100% 75%;
@@ -306,6 +310,7 @@ body {
 }
 
 .contact-form input {
+  width: 100%;
   padding: 15px;
 }
 
@@ -320,6 +325,7 @@ body {
   padding: 12px;
   border: 1px solid #60c095;
   border-radius: 4px;
+  width: 100%;
 }
 
 .contact-form textarea::placeholder {

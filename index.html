@@ -236,29 +236,39 @@
           action="https://formspree.io/f/xpznodbr"
           method="post"
         >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Full name"
-            required
-            maxlength="30"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email address"
-            required
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Enter text here"
-            maxlength="500"
-            required
-          ></textarea>
-          <input class="btn-primary" type="submit" value="Get in touch" />
+          <div class="field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Full name"
+              required
+              maxlength="30"
+            />
+          </div>
+
+          <div class="field">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email address"
+              required
+            />
+            <small></small>
+          </div>
+
+          <div class="field">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter text here"
+              maxlength="500"
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn-primary" type="submit">Get in touch</button>
         </form>
       </section>
     </main>
