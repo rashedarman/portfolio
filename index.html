@@ -13,15 +13,24 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
   </head>
   <body>
-    <header id="toolbar">
-      <a href="/" class="logo-primary">Welcome</a>
-      <i class="fa-solid fa-bars fa-lg menu-btn"></i>
-      <nav class="menu">
-        <a href="#">Portfolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+    <header>
+      <nav id="toolbar">
+        <a href="/" class="logo-primary">Welcome</a>
+        <button class="open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul id="menu">
+          <button class="close-btn">
+            <i class="fa-solid fa-times"></i>
+          </button>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </ul>
+        <div class="overlay"></div>
       </nav>
     </header>
 
@@ -59,7 +68,7 @@
         </div>
       </section>
 
-      <section id="recent-works">
+      <section id="portfolio">
         <img
           class="icon-btn"
           src="./assets/icons/chevron-down.png"
@@ -151,7 +160,7 @@
         </div>
       </section>
 
-      <section id="about-me">
+      <section id="about">
         <div class="bio">
           <h2 class="heading-primary">About me</h2>
           <p class="supporting-text container-md">
@@ -162,7 +171,7 @@
           <button class="btn-primary">Get My Resume</button>
         </div>
 
-        <div class="about-me-cards">
+        <div class="about-cards">
           <div class="card-secondary">
             <img src="./assets/icons/languages.png" alt="languages" />
             <h3 class="card-title">Languages</h3>
@@ -216,13 +225,17 @@
         </div>
       </section>
 
-      <section id="contact-form">
+      <section id="contact">
         <h3 class="heading-primary">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h3>
 
-        <form action="https://formspree.io/f/xpznodbr" method="post">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xpznodbr"
+          method="post"
+        >
           <input
             type="text"
             name="name"
