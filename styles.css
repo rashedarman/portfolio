@@ -17,14 +17,21 @@ body {
   color: var(--color-secondary);
 }
 
-#hamburger {
+.open-btn,
+.close-btn {
   background-color: transparent;
   border: 0;
   font-size: 20px;
   cursor: pointer;
 }
 
-#hamburger:focus {
+.close-btn {
+  text-align: right;
+  margin-bottom: 60px;
+}
+
+.open-btn:focus,
+.close-btn:focus {
   outline: none;
 }
 
@@ -32,6 +39,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 30px;
   position: relative;
 }
@@ -55,12 +63,46 @@ body {
 
 #menu {
   display: none;
+  position: relative;
 }
 
-#menu > a {
+.overlay {
+  display: none;
+}
+
+#menu.show {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  z-index: 99;
+  margin: 0;
+  border-radius: 0 0 30px 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+#menu.show a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+#menu.show + .overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
 }
 
 .logo-primary {
@@ -311,7 +353,8 @@ footer .social-links {
 /* media queries */
 
 @media screen and (min-width: 960px) {
-  #hamburger,
+  .close-btn,
+  .open-btn,
   .logo-primary {
     display: none;
   }
@@ -319,6 +362,12 @@ footer .social-links {
   #menu {
     display: flex;
     margin: auto;
+  }
+
+  #menu a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 600;
   }
 
   #menu > a:not(:last-child) {
