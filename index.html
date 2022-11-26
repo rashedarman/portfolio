@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,7 +14,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
+
     <script src="./main.js" defer></script>
+    <script src="./modal.js" defer></script>
   </head>
   <body>
     <header>
@@ -89,7 +92,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
           <div class="card">
@@ -102,7 +105,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
           <div class="card">
@@ -115,7 +118,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
           <div class="card">
@@ -128,7 +131,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
           <div class="card">
@@ -141,7 +144,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
           <div class="card">
@@ -154,7 +157,7 @@
                 <li class="tag">Javascript</li>
                 <li class="tag">html</li>
               </ul>
-              <button class="btn-primary">See Project</button>
+              <button class="btn-primary open-popup">See Project</button>
             </div>
           </div>
         </div>
@@ -272,6 +275,49 @@
         </form>
       </section>
     </main>
+
+    <div class="popup-modal">
+      <div class="popup-card">
+        <button class="close-popup">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <div>
+          <img
+            class="popup-img"
+            src="./assets/popup-image.png"
+            alt="card image"
+          />
+        </div>
+        <div class="title">
+          <h3>Keeping track of hundreds of components</h3>
+        </div>
+        <div class="technologies">
+          <ul class="tag-container" style="justify-content: start">
+            <li class="tag">Ruby on rails</li>
+            <li class="tag">css</li>
+            <li class="tag">JavaScript</li>
+          </ul>
+        </div>
+        <div class="details">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum
+            sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde
+            veniam id molestiae totam!
+          </p>
+        </div>
+        <div class="popup-actions">
+          <a class="btn-primary">
+            See live
+            <i class="fa-solid fa-link"></i>
+          </a>
+          <a class="btn-primary">
+            See source
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <ul class="social-links">
