@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome</title>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -13,7 +14,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles.css" />
+
     <script src="./main.js" defer></script>
+    <script src="./modal.js" defer></script>
   </head>
   <body>
     <header>
@@ -78,86 +81,7 @@
         <h2 class="heading-primary">My Recent Works</h2>
         <hr class="indicator" />
 
-        <div class="container-lg">
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-          <div class="card">
-            <img src="./assets/placeholder.png" alt="placeholder image" />
-            <div class="card-details">
-              <h5 class="card-title">Multi-Post Stories Gain+Glory</h5>
-              <ul class="tag-container">
-                <li class="tag">Ruby on rails</li>
-                <li class="tag">css</li>
-                <li class="tag">Javascript</li>
-                <li class="tag">html</li>
-              </ul>
-              <button class="btn-primary">See Project</button>
-            </div>
-          </div>
-        </div>
+        <div id="portfolio-cards" class="container-lg"></div>
       </section>
 
       <section id="about">
@@ -272,6 +196,30 @@
         </form>
       </section>
     </main>
+
+    <div class="popup-modal">
+      <div class="popup-card">
+        <button class="close-popup">
+          <i class="fa-solid fa-times"></i>
+        </button>
+        <div>
+          <img class="popup-img" alt="card image" />
+        </div>
+        <div class="title"></div>
+        <ul class="tag-container" style="justify-content: start"></ul>
+        <div class="details"></div>
+        <div class="popup-actions">
+          <a class="btn-primary">
+            See live
+            <i class="fa-solid fa-link"></i>
+          </a>
+          <a class="btn-primary">
+            See source
+            <i class="fa-brands fa-github fa-lg"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <ul class="social-links">
