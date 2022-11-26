@@ -1,64 +1,105 @@
 const projectData = [
   {
-    title: 'Keeping track of hundreds of components 1',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
   {
-    title: 'Keeping track of hundreds of components 2',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
   {
-    title: 'Keeping track of hundreds of components 3',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
   {
-    title: 'Keeping track of hundreds of components 4',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
   {
-    title: 'Keeping track of hundreds of components 5',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
   {
-    title: 'Keeping track of hundreds of components 6',
+    title: 'Multi-Post Stories Gain+Glory',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis temporibus sint fugiat blanditiis, quo aperiam, vel maxime rerum sunt dignissimos, dolorem tenetur id! Exercitationem magnam unde veniam id molestiae totam! ',
     image: './assets/popup-image.png',
-    technologies: ['Ruby on rails', 'css', 'JavaScript'],
+    technologies: ['Ruby on rails', 'css', 'JavaScript', 'html'],
     live: '#',
     source: '#',
   },
 ];
 
+const popupModal = document.querySelector('.popup-modal');
+const portfolioCards = document.getElementById('portfolio-cards');
+
+// dynamically create project cards
+projectData.forEach((data) => {
+  const cardDiv = document.createElement('div');
+  cardDiv.className = 'card';
+
+  const cardImg = document.createElement('img');
+  cardImg.src = data.image;
+
+  cardDiv.appendChild(cardImg);
+
+  const cardDetails = document.createElement('div');
+  cardDetails.className = 'card-details';
+
+  const cardTitle = document.createElement('h5');
+  cardTitle.className = 'card-title';
+  cardTitle.textContent = data.title;
+
+  const tagContainerUl = document.createElement('ul');
+  tagContainerUl.className = 'tag-container';
+
+  data.technologies.forEach((technology) => {
+    const li = document.createElement('li');
+    li.className = 'tag';
+    li.textContent = technology;
+    tagContainerUl.appendChild(li);
+  });
+
+  const openPopupBtn = document.createElement('button');
+  openPopupBtn.textContent = 'See Project';
+  openPopupBtn.classList.add('btn-primary', 'open-popup');
+
+  cardDetails.appendChild(cardTitle);
+  cardDetails.appendChild(tagContainerUl);
+  cardDetails.appendChild(openPopupBtn);
+
+  cardDiv.appendChild(cardDetails);
+
+  portfolioCards.appendChild(cardDiv);
+});
+
 const openPopupButtons = document.querySelectorAll('.open-popup');
 const closePopupButtons = document.querySelectorAll('.close-popup');
-
-const popupModal = document.querySelector('.popup-modal');
 
 openPopupButtons.forEach((button, index) => {
   button.addEventListener('click', () => {
