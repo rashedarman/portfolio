@@ -366,7 +366,6 @@ footer .social-links {
 }
 
 .popup-modal {
-  /* display: none; */
   transform: scale(0);
   position: fixed;
   top: 0;
@@ -473,6 +472,21 @@ footer .social-links {
     gap: 24px;
     max-width: 1171px;
     margin: auto;
+  }
+
+  .popup-modal {
+    overflow: scroll;
+  }
+
+  .popup-card {
+    padding: 30px;
+    width: 920px;
+    height: auto;
+    margin: auto;
+  }
+
+  .popup-card .title {
+    margin: 20px 0;
   }
 
   #contact {
