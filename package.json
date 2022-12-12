@@ -2,8 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:rashedarman/portfolio.git",
-  "author": "Rashed Arman <rashedaraman21@gmail.com>",
+  "author": "Rashed Arman <rashedarman21@gmail.com>",
   "license": "MIT",
   "scripts": {
     "stylelint": "stylelint \"**/*.{css,scss}\"",
